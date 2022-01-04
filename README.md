@@ -1,7 +1,7 @@
 # Barcode Rattler
 A Raspberry Pi Powered Barcode Reader to load a game on the Mister FPGA using MBC
 
-This is a work in progress.
+This is a work in progress and a bit hackery 😅
 
 There are limitations on the MBC side. Some of the computer cores don't work in loading games up. Such as the commodore computers as the cores have changed the menu layout is slightly different.
 
