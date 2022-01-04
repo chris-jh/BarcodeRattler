@@ -1,0 +1,14 @@
+[Unit]
+Description=Barcode Rattler
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+ExecStart=/opt/barcoderattler/startrattler
+RestartSec=5
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+

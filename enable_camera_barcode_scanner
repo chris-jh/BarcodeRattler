@@ -1,0 +1,5 @@
+#!/bin/bash
+sudo cp /opt/barcoderattler/barcoderattler_camera.service /etc/systemd/system
+sudo systemctl daemon-reload
+sudo systemctl disable barcoderattler.service
+sudo systemctl enable barcoderattler_camera.service

@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /opt/barcoderattler
+python3 ./barcoderattler.py
