@@ -100,6 +100,11 @@ and this should be inside it
 
 ```KERNEL=="hidraw*", SUBSYSTEM=="hidraw", MODE="0664", GROUP="plugdev"```
 
+The barcode scanner will need to be in USB Keyboard mode, it also needs to be the first usb keyboard device to be plugged in, or the only usb keyboard device plugged.
+
+The barcode device i bought was this one from amazon.
+
+https://www.amazon.co.uk/gp/product/B00Y83TXOE
 
 CSV File
 ========
