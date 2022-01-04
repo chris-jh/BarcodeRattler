@@ -5,7 +5,7 @@ This is a work in progress and a bit hackery 😅
 
 There are limitations on the MBC side. Some of the computer cores don't work in loading games up. Such as the commodore computers as the cores have changed the menu layout is slightly different.
 
-Currently i have only implemented getting gamse from out of zip files. You can do direct loading of a rom, just not implemented in my python script to do this.
+Currently i have only implemented getting games from out of zip files. You can do direct loading of a rom, just not implemented in my python script to do this.
 
 The CSV file, spaces and other special characters need backslash \ or sometimes double backslash \\\ not got around to sorting this out.
 
@@ -18,6 +18,18 @@ Versions
 
 ---
 
+Raspberry Pi OS
+===============
+
+I used the Raspberry Pi OS Lite Release date: October 30th 2021 
+
+Copying of files
+================
+
+Files need to be copied to a /opt/barcoderattler folder
+
+```sudo mkdir /opt/barcoderattler```
+```sudo chown pi /opt/barcoderattler```
 
 Installing MBC on Mister
 ========================
@@ -58,8 +70,11 @@ I had to adjust mine anticlockwise about 1 full turn
 Intalling PYTHON LIBS
 ======================
 
-run the file barcodesetup.sh on the pi, this should install the python libraries that is required
+make sure to 
 
+```sudo apt-get update```
+
+and then run the file barcodesetup.sh (do not sudo, it will ask for password) on the pi, this should install the python libraries that is required
 
 KEYBOARD USB Permissions
 ========================
