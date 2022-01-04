@@ -1,6 +1,9 @@
 # BarcodeRattler
 A Raspberry Pi Powered Barcode Reader to load a game on the Mister FPGA using MBC
 
+This is a work in progress
+
+---
 
 INSTALLING THE MBC ON MISTER
 ============================
@@ -36,6 +39,19 @@ INSTALLING PYTHON LIBS
 ======================
 
 run the file barcodesetup.sh on the pi, this should install the python libraries that is required
+
+KEYBOARD USB PERMISSIONS
+========================
+
+A udev rule is required so that the pi user can have access to the USB events for the keyboard
+
+create a file called
+
+/etc/udev/rules.d/99-hidraw-permissions.rules
+
+and this shoule be inside it
+
+```KERNEL=="hidraw*", SUBSYSTEM=="hidraw", MODE="0664", GROUP="plugdev"```
 
 CSV FILE
 ========
