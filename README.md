@@ -29,9 +29,13 @@ Installation of files
 Files need to be installed in to a folder called /opt/barcoderattler
 
 ```sudo mkdir /opt/barcoderattler```
+
 ```sudo chown pi /opt/barcoderattler```
+
 ```cd /opt/barcoderattler```
+
 ```wget https://github.com/chris-jh/BarcodeRattler/archive/refs/heads/main.zip```
+
 ```unzip main.zip```
 
 Installing MBC on Mister
