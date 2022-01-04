@@ -5,6 +5,7 @@ This is a work in progress
 
 ---
 
+
 Installing MBC on Mister
 ========================
 
@@ -24,6 +25,12 @@ ssh root@IP
 cd /media/fat
 ./mmsmbc.sh
 
+Running this file will download MBC from the Fork at https://github.com/mrchrisster/MiSTer_Batch_Control
+
+The main MBC is located at
+
+https://github.com/pocomane/MiSTer_Batch_Control
+
 
 Configuring the PI Camera
 =========================
@@ -40,6 +47,7 @@ Intalling PYTHON LIBS
 
 run the file barcodesetup.sh on the pi, this should install the python libraries that is required
 
+
 KEYBOARD USB Permissions
 ========================
 
@@ -52,6 +60,7 @@ create a file called
 and this shoule be inside it
 
 ```KERNEL=="hidraw*", SUBSYSTEM=="hidraw", MODE="0664", GROUP="plugdev"```
+
 
 CSV File
 ========
@@ -68,6 +77,7 @@ TMP=a temperory filename to extract the zipfile to, can be for example /tmp/game
 
 any special characters in the file path including spaces needs the backslash \
 some need double backslash such as the [ ] 
+
 
 Running
 =======
