@@ -70,7 +70,7 @@ create a file called
 
 /etc/udev/rules.d/99-hidraw-permissions.rules
 
-and this shoule be inside it
+and this should be inside it
 
 ```KERNEL=="hidraw*", SUBSYSTEM=="hidraw", MODE="0664", GROUP="plugdev"```
 
