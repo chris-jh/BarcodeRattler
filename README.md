@@ -7,7 +7,7 @@ There are limitations on the MBC side. Some of the computer cores don't work in 
 
 Currently i have only implemented getting gamse from out of zip files. You can do direct loading of a rom, just not implemented in my python script to do this.
 
-The CSV file, spaces and other special characters need backslash \ or sometimes double backslash \\, not got around to sorting this out.
+The CSV file, spaces and other special characters need backslash \ or sometimes double backslash \\\ not got around to sorting this out.
 
 ---
 
