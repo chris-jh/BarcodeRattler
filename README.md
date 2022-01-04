@@ -49,13 +49,15 @@ Copy the mmsmbc.sh file to Mister in the Fat folder
 
 default password is 1
 
-scp /opt/barcoderattler/mmsmbc.sh root@IP:/media/fat
+```scp /opt/barcoderattler/mmsmbc.sh root@IP:/media/fat```
 
 ssh into Mister and run the mmsmbc.sh file to install mbc
 
-ssh root@IP
-cd /media/fat
-./mmsmbc.sh
+```ssh root@IP```
+
+```cd /media/fat```
+
+```./mmsmbc.sh```
 
 Running this file will download MBC from the Fork at https://github.com/mrchrisster/MiSTer_Batch_Control
 
@@ -88,9 +90,9 @@ KEYBOARD USB Permissions
 
 A udev rule is required so that the pi user can have access to the USB events for the keyboard
 
-create a file called
+create a file called (you will have to sudo nano)
 
-/etc/udev/rules.d/99-hidraw-permissions.rules
+```/etc/udev/rules.d/99-hidraw-permissions.rules```
 
 and this should be inside it
 
@@ -141,11 +143,11 @@ You should do any interaction with the Pi via SSH
 
 To run each version, only one should be run, from the command line type either
 
-1. /opt/barcoderattler/startrattler
+1. ```/opt/barcoderattler/startrattler```
 
    To start the Barcode Hand Scanner version
 
-2. /opt/barcoderattler/startrattler_camera
+2. ```/opt/barcoderattler/startrattler_camera```
 
    To start the Barcode scanning via the Pi Camera
 
@@ -153,11 +155,11 @@ To run each version, only one should be run, from the command line type either
 
 If you want to enable the barcode rattler on start up, run either of the following
 
-1. /opt/barcoderattler/enable_barcode_scanner
+1. ```/opt/barcoderattler/enable_barcode_scanner```
 
    To enable the Barcode Hand Scanner on boot up
 
-2. /opt/barcoderattler/enable_camera_barcode_scanner
+2. ```/opt/barcoderattler/enable_camera_barcode_scanner```
 
    To enable the Barcode Scanning via the Pi Camer on boot up
 
@@ -165,19 +167,19 @@ If you want to enable the barcode rattler on start up, run either of the followi
 
 To start and stop the service
 
-1. sudo service start barcoderattler
+1. ```sudo service start barcoderattler```
 
    To Start the Barcode Hand Scanner
 
-2. sudo service stop barcoderattler
+2. ```sudo service stop barcoderattler```
 
    To Stop the Barcode Hand Scanner
 
-3. sudo service start barcoderattler
+3. ```sudo service start barcoderattler```
 
    To Start the Barcode Camera Scanner
 
-4. sudo service stop barcoderattler
+4. ```sudo service stop barcoderattler```
 
    To Stop the Barcode Camera Scanner
 
@@ -188,6 +190,6 @@ To Stop the services for starting at boot up
 
 Run
 
-sudo systemctl disable barcoderattler_camera.service
+```sudo systemctl disable barcoderattler_camera.service```
 
-sudo systemctl disable barcoderattler.service
+```sudo systemctl disable barcoderattler.service```
