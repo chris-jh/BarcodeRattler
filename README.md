@@ -1,12 +1,12 @@
-# BarcodeRattler
+# Barcode Rattler
 A Raspberry Pi Powered Barcode Reader to load a game on the Mister FPGA using MBC
 
 This is a work in progress
 
 ---
 
-INSTALLING THE MBC ON MISTER
-============================
+Installing MBC on Mister
+========================
 
 Get the Mister IP Address
 
@@ -25,7 +25,7 @@ cd /media/fat
 ./mmsmbc.sh
 
 
-CONFIGURING THE PI CAMERA
+Configuring the PI Camera
 =========================
 
 Make sure to enable the Camera and SSH on the Pi
@@ -35,12 +35,12 @@ You may need to tweak the focus on the Camera, so it can read close up objects, 
 I had to adjust mine anticlockwise about 1 full turn
 
 
-INSTALLING PYTHON LIBS
+Intalling PYTHON LIBS
 ======================
 
 run the file barcodesetup.sh on the pi, this should install the python libraries that is required
 
-KEYBOARD USB PERMISSIONS
+KEYBOARD USB Permissions
 ========================
 
 A udev rule is required so that the pi user can have access to the USB events for the keyboard
@@ -53,7 +53,7 @@ and this shoule be inside it
 
 ```KERNEL=="hidraw*", SUBSYSTEM=="hidraw", MODE="0664", GROUP="plugdev"```
 
-CSV FILE
+CSV File
 ========
 
 The file is made up of the headers
@@ -69,7 +69,7 @@ TMP=a temperory filename to extract the zipfile to, can be for example /tmp/game
 any special characters in the file path including spaces needs the backslash \
 some need double backslash such as the [ ] 
 
-RUNNING
+Running
 =======
 
 There are two python script files
