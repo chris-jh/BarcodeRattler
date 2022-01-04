@@ -63,7 +63,7 @@ Running this file will download MBC from the Fork at https://github.com/mrchriss
 
 It will be installed on your SD Card at ```/media/fat/Scripts/.barcoderattler```
 
-The main MBC is located at
+The main MBC Project is located at
 
 https://github.com/pocomane/MiSTer_Batch_Control
 
