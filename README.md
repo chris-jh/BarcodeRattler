@@ -61,6 +61,8 @@ ssh into Mister and run the mmsmbc.sh file to install mbc
 
 Running this file will download MBC from the Fork at https://github.com/mrchrisster/MiSTer_Batch_Control
 
+It will be installed on your SD Card at ```/media/fat/Scripts/.barcoderattler```
+
 The main MBC is located at
 
 https://github.com/pocomane/MiSTer_Batch_Control
