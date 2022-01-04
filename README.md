@@ -1,7 +1,20 @@
 # Barcode Rattler
 A Raspberry Pi Powered Barcode Reader to load a game on the Mister FPGA using MBC
 
-This is a work in progress
+This is a work in progress.
+
+There are limitations on the MBC side. Some of the computer cores don't work in loading games up. Such as the commodore computers as the cores have changed the menu layout is slightly different.
+
+Currently i have only implemented getting gamse from out of zip files. You can do direct loading of a rom, just not implemented in my python script to do this.
+
+The CSV file, spaces and other special characters need backslash \ or sometimes double backslash \\, not got around to sorting this out.
+
+---
+
+Versions
+========
+
+0.2 04/01/2022 | Initial commit
 
 ---
 
