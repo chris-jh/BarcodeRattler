@@ -36,7 +36,7 @@ Files need to be installed in to a folder called /opt/barcoderattler
 
 ```wget https://github.com/chris-jh/BarcodeRattler/archive/refs/heads/main.zip```
 
-```unzip main.zip```
+```unzip -j ./main.zip```
 
 Installing MBC on Mister
 ========================
