@@ -101,6 +101,7 @@ make sure to
 
 and then run the file barcodesetup.sh (do not sudo, it will ask for password) on the pi, this should install the python libraries that is required
 
+
 KEYBOARD USB Permissions
 ========================
 
@@ -120,6 +121,7 @@ The barcode device i bought was this one from amazon.
 
 https://www.amazon.co.uk/gp/product/B00Y83TXOE
 
+
 CSV File
 ========
 
@@ -127,14 +129,23 @@ The file is made up of the headers
 
 ```BARCODE,CORE,ZIP,FILE,TMP```
 
-BARCODE=The Barcode
-CORE=Is the Core name, like GENESIS
-ZIP=This zip file, this version expects the games to be inside a zip file, if not then changes need to be made to the python script
-FILE=The file including the path inside the zip file of the game
-TMP=a temperory filename to extract the zipfile to, can be for example /tmp/game.md for the genesis 
+| Field    | Description | Example   |
+| -------- | ----------- | --------- |
+| BARCODE  | The Barcode | 123456789 |
+| Core     | Name of the core to run | GENESIS |
+| ZIP      | Location of the Zip File. Currently this version expects the games to be inside a zip file | /media/fat/Games/Genesis/GenesisGames.zip |
+| FILE     | Location of the game inside the zip file | US\Q-Z\Street\ Fighter\ II\ CE.md |
+| TMP      | A temporary location to unzip the game to | /tmp/game.md |
 
 any special characters in the file path including spaces needs the backslash \
 some need double backslash such as the [ ] 
+
+
+To see what the core names are on mbc, you need to ssh into the MisterFGPA and run
+
+```/media/fat/Scripts/.barcoderattler/mbc list_core```
+
+The core name is the first field
 
 
 Running
