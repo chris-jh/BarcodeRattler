@@ -73,13 +73,9 @@ ssh into Mister and run the mmsmbc.sh file to install mbc
 
 ```./mmsmbc.sh```
 
-Running this file will download MBC from the Fork at https://github.com/mrchrisster/MiSTer_Batch_Control
+Running this file will download the latest release of MBC from ```https://github.com/pocomane/MiSTer_Batch_Control```
 
 It will be installed on your SD Card at ```/media/fat/Scripts/.barcoderattler```
-
-The main MBC Project is located at
-
-https://github.com/pocomane/MiSTer_Batch_Control
 
 
 Configuring the PI Camera
