@@ -125,7 +125,7 @@ CSV File
 
 The file is made up of the headers
 
-BARCODE,CORE,ZIP,FILE,TMP
+```BARCODE,CORE,ZIP,FILE,TMP```
 
 BARCODE=The Barcode
 CORE=Is the Core name, like GENESIS
