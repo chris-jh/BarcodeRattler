@@ -17,7 +17,7 @@ if [ ! -f "${brpath}/mbc" ]; then
    #REPOSITORY_URL="https://github.com/mrchrisster/MiSTer_Batch_Control"
    #mbcurl="blob/master/mbc_v06"
    #curl_download "/tmp/mbc" "${REPOSITORY_URL}/${mbcurl}?raw=true"
-   curl -s "https://api.github.com/repos/pocomane/MiSTer_Batch_Control/releases/latest" | grep "browser_download_url.*mbc\"" | cut -d : -f 2,3 | tr -d \" | wget -P /tmp/ -qi -
+   curl --insecure -s "https://api.github.com/repos/pocomane/MiSTer_Batch_Control/releases/latest" | grep "browser_download_url.*mbc\"" | cut -d : -f 2,3 | tr -d \" | wget -P /tmp/ -qi -
    mkdir -p "${brpath}"
    mv --force "/tmp/mbc" "${brpath}/mbc"
 else
