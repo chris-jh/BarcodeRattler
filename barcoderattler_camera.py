@@ -1,6 +1,6 @@
 #Version: 0.2
 #Author: Chrissy
-#Date: 04/02/2022
+#Date: 04/01/2022
 
 import cv2
 import pyzbar.pyzbar as pyzbar
