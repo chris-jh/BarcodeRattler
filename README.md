@@ -34,9 +34,23 @@ Files need to be installed in to a folder called /opt/barcoderattler
 
 ```cd /opt/barcoderattler```
 
-```wget https://github.com/chris-jh/BarcodeRattler/archive/refs/heads/main.zip```
+You can either get the zip file
 
-```unzip -j ./main.zip```
+```wget https://github.com/chris-jh/BarcodeRattler/archive/refs/tags/barcoderattler_v0.2.zip```
+
+```unzip -j ./barcoderattler_v0.2.zip```
+
+or the tar.tgz file
+
+```wget https://github.com/chris-jh/BarcodeRattler/archive/refs/tags/barcoderattler_v0.2.tar.gz```
+
+```tar -zxf ./barcoderattler_v0.2.tar.gz --strip-components=1```
+
+or if you have git installed, you can clone the latest
+
+```git clone https://github.com/chris-jh/BarcodeRattler.git ./```
+
+all the above methods assume you are inside the /opt/barcoderattler folder before running
 
 Installing MBC on Mister
 ========================
