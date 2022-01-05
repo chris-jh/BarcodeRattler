@@ -14,7 +14,7 @@ The CSV file, spaces and other special characters need backslash \ or sometimes 
 Versions
 ========
 
-0.2 04/01/2022 | Initial commit
+0.2 04/01/2022 | Initial commit and release
 
 ---
 
