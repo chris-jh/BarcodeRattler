@@ -125,7 +125,7 @@ https://www.amazon.co.uk/gp/product/B00Y83TXOE
 CSV File
 ========
 
-The file is made up of the headers
+The file is made up of the following headers
 
 ```BARCODE,CORE,ZIP,FILE,TMP```
 
