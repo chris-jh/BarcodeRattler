@@ -4,6 +4,7 @@ python3 -m pip install evdev
 python3 -m pip install pyzbar
 python3 -m pip install pexpect
 python3 -m pip install RPi.GPIO
+python3 -m pip install nfcpy
 
 echo "Run either"
 echo ""
