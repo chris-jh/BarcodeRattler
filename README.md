@@ -16,7 +16,7 @@ Versions
 
 | Version    | Date       | Description   | Released |
 | ---------- | ---------- | ------------- | -------- |
-| 0.2        | 04/01/2022 | Initial commit            | Yes [ link ] (https://github.com/chris-jh/BarcodeRattler/releases/tag/barcoderattler_v0.2) |
+| 0.2        | 04/01/2022 | Initial commit            | Yes [ link ](https://github.com/chris-jh/BarcodeRattler/releases/tag/barcoderattler_v0.2) |
 | 0.2.1      | 07/01/2022 | NFC Support added by Symm | No |
 
 ---
