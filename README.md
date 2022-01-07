@@ -124,9 +124,11 @@ NFC Support
 
 NFC Support has been added by Symm.
 
-Devices that are supports can be seen here [ Supported Devices ](https://nfcpy.readthedocs.io/en/latest/overview.html#supported-devices)
+Devices that are supported can be seen here [ Supported Devices ](https://nfcpy.readthedocs.io/en/latest/overview.html#supported-devices)
 
-There is no service or start file for it yet, but you can modify the startrattler bash script and change to run the barcoderattler_nfc.py
+Set ```NFC_ID``` to the one you have from the list inside the ```barcoderattler_nfc.py``` file
+
+There is no service or start file for it yet, but you can modify the ```startrattler``` bash script and change to run the ```barcoderattler_nfc.py```
 
 
 CSV File
