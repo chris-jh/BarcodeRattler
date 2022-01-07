@@ -14,7 +14,8 @@ The CSV file, spaces and other special characters need backslash \ or sometimes 
 Versions
 ========
 
-0.2 04/01/2022 | Initial commit and release
+0.2   04/01/2022 | Initial commit and release
+0.2.1 07/01/2022 | NFC Support added by Symm
 
 ---
 
@@ -116,6 +117,16 @@ The barcode scanner will need to be in USB Keyboard mode, it also needs to be th
 The barcode device i bought was this one from amazon.
 
 https://www.amazon.co.uk/gp/product/B00Y83TXOE
+
+
+NFC Support
+===========
+
+NFC Support has been added by Symm.
+
+Devices that are supports can be seen here [ Supported Devices ](https://nfcpy.readthedocs.io/en/latest/overview.html#supported-devices)
+
+There is no service or start file for it yet, but you can modify the startrattler bash script and change to run the barcoderattler_nfc.py
 
 
 CSV File
