@@ -14,8 +14,10 @@ The CSV file, spaces and other special characters need backslash \ or sometimes 
 Versions
 ========
 
-0.2   04/01/2022 | Initial commit and release
-0.2.1 07/01/2022 | NFC Support added by Symm
+| Version    | Date       | Description   |
+| ---------- | ---------- | ------------- |
+| 0.2        | 04/01/2022 | Initial commit and release
+| 0.2.1      | 07/01/2022 | NFC Support added by Symm
 
 ---
 
