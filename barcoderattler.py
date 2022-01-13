@@ -82,15 +82,12 @@ def mms(rr):
       print(e)
       return False
 
-def findRow(code):
-   with open(MMSCSV, 'r') as read_obj:
-      csv_dict_reader = DictReader(read_obj)
-      for row in csv_dict_reader:
-         if row['BARCODE'] == code:
-            return row
-
 try:
    lastData=''
+   codes={}
+   with open(MMSCSV, 'r') as read_obj:
+      csv_dict_reader = DictReader(read_obj)
+      codes = {row['BARCODE']: row for row in csv_dict_reader}
    while True:
       data = readBarcode()
       if data:
@@ -98,7 +95,7 @@ try:
             GPIO.output(led, GPIO.HIGH)
             lastData = data
             print(lastData)
-            rr=findRow(data)
+            rr=codes[data]
             if rr:
                print(rr['CORE'], rr['FILE'])
                if mms(rr) == False:
